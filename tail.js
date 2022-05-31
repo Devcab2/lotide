@@ -11,13 +11,14 @@ const tail = function(arr) {
 };
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-
+const emptyResult = [];
 console.log(result);
 
+assertEqual(emptyResult, []);  // an empty array needs to equal []
 assertEqual(result.length, 2); // ensure we get back two elements
 assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
-
+//assertEqual(emptyResult[], []);       -----> attempting to set an empty array = to an empty array.
 
 
 

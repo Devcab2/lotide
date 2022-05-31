@@ -1,9 +1,24 @@
 const assertEqual = function(actual, expected) {
   actual === expected ?
     console.log(`🟢Assertion Passed: "${actual}" === "${expected}"`) :
-    console.log(`🔴Assertion Failed: "${actual}" !== "${expected}'`);
+    console.log(`🔴Assertion Failed: "${actual}" !== "${expected}"`);
 };
-console.log(assertEqual);
+
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]),true);
+assertEqual(eqArrays([4, 5, 6], [4, 5, 7]), true);
+
+//console.log(assertEqual);
 
 // assertEqual is a function that will confirm if our output matches our ecpected output
 // create a function (eqArrays) that will take 2 arrays,
@@ -17,17 +32,18 @@ console.log(assertEqual);
 // loop through array 2
 // compare each element
 //
-
+/*
 const eqArrays = function(arr1,arr2) {
   console.log("arrays", arr1,arr2);
   for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
+    if (arr1[i] === arr2[i]) {
+      return true;
     }
-    
   }
-  return true;
+  return false;
 };
 //eqArrays();
-assertEqual(eqArrays([1, 2, 3], [1, 2, "3"]), false);
-// we want to check if our elements are equal / but sometime we want to know if they dont match
+
+
+// we want to check if our elements are equal / but sometime we want to know if they dont match */
+
