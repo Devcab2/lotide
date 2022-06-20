@@ -14,3 +14,6 @@ assertEqual("red", "blue");
 assertEqual(-2, -2);
 assertEqual(true, true);
 assertEqual("green", "green");
+
+
+module.exports = assertEqual;
