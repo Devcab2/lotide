@@ -1,4 +1,3 @@
-const { add } = require('lodash');
 const assertArraysEqual = require('../assertArraysEqual.js');
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
