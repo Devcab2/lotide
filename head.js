@@ -2,19 +2,7 @@ const head = function(arr) {
   return arr[0];
 };
 
-const assertEqual = require('./assertEqual');
-
-
-
-
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([]), undefined);
-assertEqual(head([10]), 10);
-
-
-
-
+module.exports = head;
 
 //CREATE A FUNCTION HEAD WHICH RETURNS THE FIRST ITEM IN THE ARRAY
 
