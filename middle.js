@@ -14,7 +14,9 @@ const middle = function(arr) {
     middleElements.push(middleIndex);
     middleElements.push(middleIndex + 1);
   }
+  console.log(middleElements);
   return middleElements;
 };
+
 
 module.exports = middle;
