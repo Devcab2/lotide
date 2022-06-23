@@ -1,23 +1,7 @@
-// Returns true if both objects have identical keys with identical values.
-
-// Otherwise you get back a big fat false!
-
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
 // eqarrays to evaluate 2arrays msking sure they are the same
 
 // eqObjects compares 2 objeects and determines if they are equivalent.
-
+const eqArrays = require('./eqArrays');
 const eqObjects = function(obj1, obj2) {
 
   const objOneKey = Object.keys(obj1,);
@@ -75,8 +59,10 @@ const eqObjects = function(obj1, obj2) {
   
 };
 
+module.exports = eqObjects;
 
-const cd = { c: "1", d: ["2", 3] };
+
+/*const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 console.log(eqObjects(cd, dc));
 

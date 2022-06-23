@@ -16,7 +16,9 @@ const map = (array, callback) => {
 
 };
 
-const words = ["Lilly", "Stephanie", "Baby"];
+module.exports = map;
+
+/* const words = ["Lilly", "Stephanie", "Baby"];
 
 
 const results1 = map(words, word => word[0]);
@@ -31,5 +33,4 @@ console.log(results2); // ["Lilly", "Stephanie", "Baby"]
 console.log(results3); // [5, 9, 4]
 
 // note that the callback is only defined when calling map not inside the function (anonymous)
-
-
+*/

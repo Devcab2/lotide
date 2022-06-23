@@ -24,7 +24,7 @@ const letterPosition = function(string) {
 
 console.log(letterPosition("hello"));
 
-
+module.exports = letterPosition;
 
 
 

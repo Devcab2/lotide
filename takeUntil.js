@@ -20,8 +20,10 @@ const takeUntil = function(array, callback) {
   return result;
 };
 
-const array1 = [1, 2, 3, -4, -5];
+module.exports = takeUntil;
+
+/*const array1 = [1, 2, 3, -4, -5];
 const callback1 = takeUntil(array1, x => x < 0);
 
 console.log(callback1); // [1, 2, 3]
-
+*/

@@ -1,0 +1,30 @@
+const head = require('./head');
+const tail = require('./tail');
+const middle = require('./middle');
+const countLetters = require('./countLetters');
+const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
+const findKey = require('./findKey');
+const without = require('./without');
+const findKeyByValue = require('./findKeyByValue');
+const flatten = require('./flatten');
+const letterPositions = require('letterPositions');
+const map = require('./map');
+const takeUntil = require('./takeUntil');
+
+
+module.exports = {
+  head: head,
+  tail: tail,
+  middle: middle,
+  countLetters: countLetters,
+  eqArrays: eqArrays,
+  eqObjects: eqObjects,
+  findKey: findKey,
+  without: without,
+  findKeyByValue: findKeyByValue,
+  flatten: flatten,
+  letterPositions: letterPositions,
+  map: map,
+  takeUntil: takeUntil
+};
