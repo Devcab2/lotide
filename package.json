@@ -2,7 +2,7 @@
   "dependencies": {
     "lodash": "^4.17.21"
   },
-  "name": "lotide",
+  "name": "@christian_bowyer/lotide",
   "version": "1.0.0",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -19,11 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/Devcab2/lotide.git"
   },
-  "author": "",
+  "author": "Chris Bowyer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Devcab2/lotide/issues"
   },
   "homepage": "https://github.com/Devcab2/lotide#readme",
-  "description": ""
+  "description": "a mini clone of the lodash library"
 }

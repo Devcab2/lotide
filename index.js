@@ -8,7 +8,7 @@ const findKey = require('./findKey');
 const without = require('./without');
 const findKeyByValue = require('./findKeyByValue');
 const flatten = require('./flatten');
-const letterPositions = require('letterPositions');
+const letterPositions = require('./letterPositions');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 
